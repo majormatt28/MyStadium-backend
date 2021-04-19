@@ -48,30 +48,30 @@ stadia = [
 reviews = [
     {
         rating: 4,
-        comments: "Greate experience!",
-        user_id: User.first,
-        stadium_id: Stadium.first
+        comments: "Great experience!",
+        user_id: User.all.sample.id,
+        stadium_id: Stadium.all.sample.id
     },
     {
         rating: 5,
         comments: "Best stadium I've been too. Would visit again!",
-        user_id: User.second,
-        stadium_id: Stadium.second
+        user_id: User.all.sample.id,
+        stadium_id: Stadium.all.sample.id
     }
 ]
 
 
-# users.each do |user_hash|
-#     User.create!(user_hash)
-# end
+users.each do |user_hash|
+    User.create!(user_hash)
+end
 
-# stadia.each do |stadium_hash|
-#     Stadium.create!(stadium_hash)
-# end
+stadia.each do |stadium_hash|
+    Stadium.create!(stadium_hash)
+end
 
-# reviews.each do |review_hash|
-#     Review.create!(review_hash)
-# end
+reviews.each do |review_hash|
+    Review.create!(review_hash)
+end
 
 puts "Seeded complete"
 
