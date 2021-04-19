@@ -10,6 +10,8 @@ User.destroy_all
 Review.destroy_all
 Stadium.destroy_all
 
+
+
 users = [
     {
         name: "Mathew",
@@ -21,6 +23,10 @@ users = [
     }
 
 ]
+
+users.each do |user_hash|
+    User.create!(user_hash)
+end
 
 stadia = [
     {
@@ -45,31 +51,28 @@ stadia = [
     }
 ]
 
-reviews = [
-    {
-        rating: 4,
-        comments: "Great experience!",
-        # user_id: User.first.id,
-        # stadium_id: Stadium.first.id
-    },
-    {
-        rating: 5,
-        comments: "Best stadium I've been too. Would visit again!",
-        # user_id: User.second.id,
-        # stadium_id: Stadium.second.id
-    }
-]
-
-
-users.each do |user_hash|
-    User.create!(user_hash)
-end
-
 stadia.each do |stadium_hash|
     Stadium.create!(stadium_hash)
 end
 
+reviews = [
+    {
+        rating: 4,
+        comments: "Great experience!",
+        user_id: User.first.id,
+        stadium_id: Stadium.first.id
+    },
+    {
+        rating: 5,
+        comments: "Best stadium I've been too. Would visit again!",
+        user_id: User.second.id,
+        stadium_id: Stadium.second.id
+    }
+]
 
+reviews.each do |review_hash|
+    Review.create!(review_hash)
+end
 
 puts "Seeded complete"
 
