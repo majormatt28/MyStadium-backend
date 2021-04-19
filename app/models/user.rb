@@ -1,5 +1,5 @@
 class User < ApplicationRecord
     has_many :reviews
-    has_many :stadiums, through: :reviews 
+    has_many :stadia, through: :reviews 
 
 end
