@@ -49,14 +49,14 @@ reviews = [
     {
         rating: 4,
         comments: "Great experience!",
-        user_id: User.all.sample.id,
-        stadium_id: Stadium.all.sample.id
+        # user_id: User.first.id,
+        # stadium_id: Stadium.first.id
     },
     {
         rating: 5,
         comments: "Best stadium I've been too. Would visit again!",
-        user_id: User.all.sample.id,
-        stadium_id: Stadium.all.sample.id
+        # user_id: User.second.id,
+        # stadium_id: Stadium.second.id
     }
 ]
 
@@ -69,9 +69,7 @@ stadia.each do |stadium_hash|
     Stadium.create!(stadium_hash)
 end
 
-reviews.each do |review_hash|
-    Review.create!(review_hash)
-end
+
 
 puts "Seeded complete"
 
