@@ -24,8 +24,10 @@ ActiveRecord::Schema.define(version: 2021_04_19_175535) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "stadiums", force: :cascade do |t|
+  create_table "stadia", force: :cascade do |t|
     t.string "name"
+    t.string "image"
+    t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
