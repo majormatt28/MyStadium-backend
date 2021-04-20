@@ -1,9 +1,9 @@
-def login
+# def login
 
- if   user = User.find_by(username: params[:username])
+#  if   user = User.find_by(username: params[:username])
 
-else
-    flash[:error] = "Username doesnt exist!"
+# else
+#     flash[:error] = "Username doesnt exist!"
     
-  end 
-end 
+#   end 
+# end 
