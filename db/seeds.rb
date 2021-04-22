@@ -15,11 +15,13 @@ Stadium.destroy_all
 users = [
     {
         name: "Mathew",
-        username: "Maseo"
+        username: "Maseo",
+        favoritestadium: "MSG"
     },
     {
         name:"Shafee",
-        username: "Shaf360"
+        username: "Shaf360",
+        favoritestadium: "Toyota Center"
     }
 
 ]
