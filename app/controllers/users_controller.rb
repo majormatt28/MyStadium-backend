@@ -12,6 +12,9 @@ class UsersController < ApplicationController
 
     def create 
         @user = User.create(user_params)
+        Stadium.all.each do |s| 
+            Review.create(user_id: @user.id, stadium_id: s.id, comments: "")
+        end
         render json: @user
     end
 

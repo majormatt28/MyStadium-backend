@@ -10,15 +10,16 @@ class ReviewsController < ApplicationController
     end
 
     def update
-        @review = Review.find_by(id: params[:id])
+        user = User.find(params[:user])
+        @review = user.reviews.find {|r| r.stadium_id == params[:stadium].to_i}
         @review.update(rating: params[:rating],
-        comments: params[:comments])
+        comments: params[:comment])
         render json: @review
     end
 
     def create
         @review = Review.cerate(review_params)
-        render json: user
+        render json: @review
     end
 
     private
