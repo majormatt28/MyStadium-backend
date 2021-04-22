@@ -15,4 +15,15 @@ class ReviewsController < ApplicationController
         comments: params[:comments])
         render json: @review
     end
+
+    def create
+        @review = Review.cerate(review_params)
+        render json: user
+    end
+
+    private
+
+    def review_params
+        params.permit(:rating, :comments)
+    end
 end
