@@ -1,26 +1,20 @@
-# README
+# MyStadium Backened
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the backend portion of our application. It is best to clone this down before the frontend. This handles all the logic of the app.
 
-Things you may want to cover:
+# Getting Started
+First you want to do is cloning both this and the Frontend portion of the app. I will briefly describe the instructions below on how to install the backened portion of the app.
 
-* Ruby version
+# Installing
 
-* System dependencies
+- Open up your text editor's terminal run 'bundle install' our gem-file is up to date so you shouldn't need to install any new gems
+- First run 'rails db:create', then 'rails db:migrate', then 'rails db:seed'
+- Run 'rails s' to get the server started
+- A localhost tab should open in your browser explore it to see the json data from our database
+- With the backend up and running you'll be able to log into the application once you install the front end.
 
-* Configuration
+# Authors
 
-* Database creation
+- Shafee Rushdan
+- Mathew Newton
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-* Something new
