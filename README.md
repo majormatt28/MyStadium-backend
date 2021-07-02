@@ -1,4 +1,6 @@
-# MyStadium Backened
+View frontend repo [here](https://github.com/majormatt28/MyStadium-frontend)
+
+# MyStadium Backend
 
 This is the backend portion of our application. It is best to clone this down before the frontend. This handles all the logic of the app.
 
