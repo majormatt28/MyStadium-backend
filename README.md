@@ -3,7 +3,7 @@
 This is the backend portion of our application. It is best to clone this down before the frontend. This handles all the logic of the app.
 
 # Getting Started
-The first thing you want to do is clone both this and the frontend portion of the app. I will briefly explain in the instructions below how to install the backened portion of the app.
+The first thing you want to do is clone both this and the frontend portion of the app. I will briefly explain in the instructions below how to install the backend portion of the app.
 
 # Installing
 
@@ -13,8 +13,6 @@ The first thing you want to do is clone both this and the frontend portion of th
 - A localhost tab should open in your browser; explore it to see the json data from our database
 - With the backend up and running you'll be able to log into the application once you install the front end.
 
-# Authors
+<img width="1267" alt="MyStadium" src="https://user-images.githubusercontent.com/58439248/124312454-59bd5380-db3d-11eb-96e6-e23e184d6192.png">
 
-- Shafee Rushdan
-- Mathew Newton
 
